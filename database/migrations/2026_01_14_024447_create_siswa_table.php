@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nisn')->unique();
             $table->string('nama_siswa');
             $table->enum('jenis_kelamin', ['laki-laki', 'perempuan']);
-            $table->foreignId('kelas_id');
+            $table->foreignId('kelas_id')->constrained('kelas');
             $table->timestamps();
         });
     }
