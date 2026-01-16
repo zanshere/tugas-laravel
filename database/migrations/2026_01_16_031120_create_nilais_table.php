@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('mata_pelajaran');
             $table->integer('skor');
-            $table->foreignId('siswa_id')->constrained('siswas')->onDelete('cascade');
+            $table->foreignId('siswa_id');
             $table->timestamps();
         });
     }
