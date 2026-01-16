@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('nilais', function (Blueprint $table) {
             $table->id();
-            
+            $table->string('mata_pelajaran');
+            $table->integer('skor');
+            $table->foreignId('siswa_id')->constrained('siswas')->onDelete('cascade');
             $table->timestamps();
         });
     }
