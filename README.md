@@ -23,5 +23,6 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## Progress Tugas
 
-- Day 1 -> migration table
-- Day 2 -> Membuat Models serta menambahkan data melalui php artisan tinker
+- Day 1 (Jobsheet 3.1) -> migration table
+- Day 2 (Jobsheet 3.2) -> Membuat Models serta menambahkan data melalui php artisan tinker
+- Day 3 (Jobsheet 3.3) -> Membuat Seeder
