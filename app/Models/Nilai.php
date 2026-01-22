@@ -11,4 +11,9 @@ class Nilai extends Model
         'mata_pelajaran',
         'skor'
     ];
+
+    public function siswa()
+    {
+        return $this->belongsTo(Siswa::class);
+    }
 }

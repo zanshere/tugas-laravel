@@ -12,5 +12,15 @@ class Siswa extends Model
         'jenis_kelamin',
         'kelas_id'
     ];
+
+    public function kelas()
+    {
+        return $this->belongsTo(Kelas::class);
+    }
+
+    public function nilai()
+    {
+        return $this->hasMany(Nilai::class);
+    }
 }
 
